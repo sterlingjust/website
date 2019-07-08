@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+/* Global CSS and Tools */
+.centered{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.matted{
+	background-color: white;
+	width: 90vw;
+	margin-left: auto;
+	margin-right: auto;
+	max-height: none;
+}
+
+
+
+
+
+
+
+/* CSS Document */
+
+html{
+	background: #E2E29B;
+}
+
+body{
+	background: #FFFFFF;
+	width: 90vw;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/*-------------- HEADER -------------------*/
+#nameplate{
+font-family: sutro-shaded-fill, sans-serif;
+font-style: normal;
+	font-size: 5vw;
+	font-weight: normal;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+#titles{
+	font-family: mrsheffield-pro,sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 3vw;
+	text-align: center;
+	padding-top: 0px;
+	padding-bottom: 10px;
+}
+
+
+
+
+
+/* --------------- NAVIGATION BAR -----------------*/
+/* Navbar background color, font size is set in section BELOW */
+.topnav {
+font-family: sutro-shaded-fill, sans-serif;
+font-weight: 400;
+font-style: normal;
+  overflow: hidden;
+  width: 40vw;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #FFFFFF;
+  padding-bottom: 20px;
+}
+
+/* Style (AND FONT SIZE) for EACH tab of navbar */
+.topnav a{
+  float: left;
+  display: block;
+  color: #000000;
+  text-align: center;
+  width: 25%;
+  padding: 10px 0px;
+  text-decoration: none;
+  font-size: 18px}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #E2E29B;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+  background-color: #9be2bf;   
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+
+/*------------------- MAIN ---------------*/
+body{
+	height: auto;
+	max-height: none;
+	background-color: white;
+	width: 90vw;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+#slider-shell{
+	height: auto;
+	max-height: 100%;
+	min-height: 100%;
+	padding: 0px 0px;
+}
+
+h1{
+font-family: sutro, serif;
+font-weight: 700;
+font-style: normal;
+	text-align: left;
+	text-indent: 7vw;
+	font-size: 3vw;
+}
+
+p{
+font-family: sutro, serif;
+font-weight: 100;
+font-style: normal;
+font-size: 20px;
+	text-align: left;
+	padding-left: 7vw;
+	padding-right: 7vw;
+}

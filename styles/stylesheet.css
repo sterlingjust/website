@@ -6,10 +6,6 @@
 	margin-right: auto;
 }
 
-.intentional_block{
-	height: 60px;
-}
-
 .matted{
 	background-color: white;
 	width: 90vw;
@@ -40,23 +36,23 @@ body{
 
 /*-------------- HEADER -------------------*/
 #nameplate{
-	font-family: tilda-petite, sans-serif;
-	font-size: 10vw;
-	font-weight: bold;
-	font-style: normal;
+font-family: sutro-shaded-fill, sans-serif;
+font-style: normal;
+	font-size: 5vw;
+	font-weight: normal;
 	text-align: center;
-	padding-top: 0px;
-	padding-bottom: 0px;
+	padding-top: 20px;
+	padding-bottom: 10px;
 }
 
 #titles{
-	font-family: halyard-display, sans-serif;
-	font-size: 2vw;
+	font-family: mrsheffield-pro,sans-serif;
+	font-weight: 400;
 	font-style: normal;
-	font-weight: 100;
+	font-size: 3vw;
 	text-align: center;
 	padding-top: 0px;
-	padding-bottom: 20px;
+	padding-bottom: 10px;
 }
 
 
@@ -64,38 +60,39 @@ body{
 
 
 /* --------------- NAVIGATION BAR -----------------*/
-/* Add a black background color to the top navigation */
+/* Navbar background color, font size is set in section BELOW */
 .topnav {
-  background-color: #000000;
-  font-family: zeitung,sans-serif;
-  font-weight: 400;
+font-family: sutro-shaded-fill, sans-serif;
+font-weight: 400;
+font-style: normal;
   overflow: hidden;
-  width: 90vw;
+  width: 40vw;
   margin-left: auto;
   margin-right: auto;
-  
+  background-color: #FFFFFF;
+  padding-bottom: 20px;
 }
 
-/* Style the links inside the navigation bar */
+/* Style (AND FONT SIZE) for EACH tab of navbar */
 .topnav a{
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: #000000;
   text-align: center;
-  width: 16.666%;
-  padding: 16px 0px;
+  width: 25%;
+  padding: 10px 0px;
   text-decoration: none;
   font-size: 18px}
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: #E2E29B;
   color: black;
 }
 
 /* Add an active class to highlight the current page */
 .active {
-  background-color: #4CAF50;
+  background-color: #9be2bf;   
   color: white;
 }
 
@@ -127,7 +124,7 @@ body{
   }
 	
 /*----- OTHER BUTTONS ----*/	
-  .topnav.responsive a {
+  .topnav.responsive a{
     float: none;
     display: block;
     text-align: center;
@@ -136,9 +133,6 @@ body{
 	margin-right: auto;	
   }
 }
-
-
-
 
 
 /*------------------- MAIN ---------------*/
@@ -160,21 +154,30 @@ body{
 }
 
 h1{
+font-family: sutro, serif;
+font-weight: 700;
+font-style: normal;
 	text-align: center;
-	font-family: gastromond, sans-serif;
-	font-weight: 700;
-	font-style: normal;
+	font-size: 3vw;
+}
+
+h2{
+font-family: sutro, serif;
+font-weight: 700;
+font-style: normal;
+	text-align: left;
+	text-indent: 7vw;
 	font-size: 3vw;
 }
 
 p{
+font-family: sutro, serif;
+font-weight: 100;
+font-style: normal;
+font-size: 20px;
 	text-align: left;
-	font-family: prestige-elite-std, monospace;
-	font-size: 2vw;
 	padding-left: 7vw;
 	padding-right: 7vw;
-	
-	
 }
 
 
