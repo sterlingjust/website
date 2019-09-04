@@ -101,7 +101,7 @@ font-style: normal;
   display: none;
 }
 
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+/* TOPNAV When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
   .topnav a {display: none;}
   .topnav a.icon, a.active{
@@ -111,28 +111,49 @@ font-style: normal;
   }
 }
 
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+/* TOPNAV The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 
-/*---- ICON ONLY ----*/
 @media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: static;
-	width: 90vw; 
-	margin-left: auto;
-	margin-right: auto;	  
-  }
 	
-/*----- OTHER BUTTONS ----*/	
-  .topnav.responsive a{
+		/*---- ICON ONLY ----*/
+    .topnav.responsive {
+	  position: relative;
+	}
+  
+	/*----- MENU ICON (once clicked) ----*/	
+	.topnav.responsive .icon {
+    position: static;
+	width: 40vw; 
+	margin-left: auto;
+	margin-right: auto;	 
+	}
+	
+	/*----- OTHER BUTTONS (once clicked) ----*/	
+  	.topnav.responsive a{
     float: none;
     display: block;
     text-align: center;
-	width: 90vw;
+	width: 40vw;			/*Not sure why but this needs to be 40vw to center text*/
 	margin-left: auto;
-	margin-right: auto;	
-  }
+	margin-right: auto;
+  	}
+	
+	/*---- PHOTOS GALLERY & IMAGES ----*/
+	.gallery {
+		flex-wrap: nowrap;
+		justify-content: center;
+	}
+	
+	.gallery img {
+		
+	}
 }
+
+@media screen and (max-width: 600px) {
+	
+	
+}
+
 
 
 /*------------------- MAIN ---------------*/
@@ -184,25 +205,24 @@ font-size: 20px;
 /*---------- ART Page Gallery ------------*/
 
 .gallery{
-	text-align: justify;
 	padding-left: 9vw;
 	padding-right: 9vw;
-	margin-left: auto;
-	margin-right:auto;
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+	
 }
 .gallery img{
 	vertical-align: middle;
 	transition: 1s;
-	padding: 15px;
-	width: 200px;
+	padding: 1.2vw;		/* CALCULATED FOR 5 IMAGES*/
+	width: 12vw;		/* CALCULATED FOR 5 IMAGES*/
 }
 .gallery img:hover{
 	filter:grayscale(100%);
+	filter: opacity(60%);
 	transform: scale(1.1);
 	transform: matrix3d(1.1);
-}
-.a last-row{
-	align-content: center;
 }
 
 
