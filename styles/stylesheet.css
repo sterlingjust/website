@@ -101,61 +101,6 @@ font-style: normal;
   display: none;
 }
 
-/* TOPNAV When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
-  .topnav a {display: none;}
-  .topnav a.icon, a.active{
-    float: none;
-    display: block;
-	width: 100%;
-  }
-}
-
-/* TOPNAV The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-
-@media screen and (max-width: 600px) {
-	
-		/*---- ICON ONLY ----*/
-    .topnav.responsive {
-	  position: relative;
-	}
-  
-	/*----- MENU ICON (once clicked) ----*/	
-	.topnav.responsive .icon {
-    position: static;
-	width: 40vw; 
-	margin-left: auto;
-	margin-right: auto;	 
-	}
-	
-	/*----- OTHER BUTTONS (once clicked) ----*/	
-  	.topnav.responsive a{
-    float: none;
-    display: block;
-    text-align: center;
-	width: 40vw;			/*Not sure why but this needs to be 40vw to center text*/
-	margin-left: auto;
-	margin-right: auto;
-  	}
-	
-	/*---- PHOTOS GALLERY & IMAGES ----*/
-	.gallery {
-		flex-wrap: nowrap;
-		justify-content: center;
-	}
-	
-	.gallery img {
-		
-	}
-}
-
-@media screen and (max-width: 600px) {
-	
-	
-}
-
-
-
 /*------------------- MAIN ---------------*/
 body{
 	height: auto;
@@ -210,7 +155,6 @@ font-size: 20px;
 	display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-	
 }
 .gallery img{
 	vertical-align: middle;
@@ -246,3 +190,74 @@ hr.style-two {
 hr.regular-short{
 	width: 75%;
 }
+
+
+
+
+
+/*--------------- MEDIA QUERIES [TOPNAV] ------------------*/
+	/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+
+@media screen and (max-width: 600px) {
+	
+	/*MAKES TOPNAV INTO BLOCKS*/
+  	.topnav a {display: none;}
+  	.topnav a.icon, a.active{
+    	float: none;
+    	display: block;
+		width: 100%;
+	}
+	
+	
+	/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+	
+	/*---- ICONS ONLY (responsive class) ----*/
+    .topnav.responsive {position: relative;}
+  
+	/*----- MENU ICONS (responsive class) ----*/	
+	.topnav.responsive .icon {
+		position: static;
+		width: 40vw; 
+		margin-left: auto;
+		margin-right: auto;	 
+	}
+	
+	/*----- OTHER BUTTONS (responsive class) ----*/	
+  	.topnav.responsive a{
+		float: none;
+		display: block;
+		text-align: center;
+		width: 40vw;			/*Not sure why but this needs to be 40vw to center text*/
+		margin-left: auto;
+		margin-right: auto;
+  	}
+	
+	/*---- PHOTOS GALLERY & IMAGES ----*/
+	.gallery {
+		flex-wrap: flex;
+		justify-content: center;
+	}
+	
+	.gallery img {
+		ertical-align: middle;
+		transition: 1s;
+		padding: 1.2vw;		/* CALCULATED FOR 2 IMAGES*/
+		width: 30vw;		/* CALCULATED FOR 2 IMAGES*/
+	}
+	
+	/*---- TEXT AND ALIGNMENT ----*/
+	h1,h2{
+		text-align: center;
+		text-indent: 0vw;
+		font-size: 5vw;
+	}
+	
+	p{
+		font-size: 3vw;
+		text-align: left;
+		padding-left: 7vw;
+		padding-right: 7vw;
+	}
+
+}
+
