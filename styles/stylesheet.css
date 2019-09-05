@@ -196,19 +196,22 @@ hr.regular-short{
 
 
 
-/*--------------- MEDIA QUERIES < 1024 [TOPNAV] ------------------*/
-@media screen and (max-width: 1024) {
+/*--------------- MEDIA QUERIES < 1024px [TOPNAV] ------------------*/
+@media screen and (max-width: 1024px) {
   	.topnav a {font-size: 12px;}
 	}
 
 
-/*--------------- MEDIA QUERIES < 600px [TOPNAV] ------------------*/
-	/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+/*--------------- MEDIA QUERIES < 724px [TOPNAV] ------------------*/
+	/* When the screen is less than 724 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 724px) {
 	
 	/*MAKES TOPNAV INTO BLOCKS*/
-  	.topnav a {display: none;}
+  	.topnav a {
+		display: none;
+		font-size: 18px;
+	}
   	.topnav a.icon, a.active{
     	float: none;
     	display: block;
