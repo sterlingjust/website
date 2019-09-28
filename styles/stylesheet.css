@@ -144,8 +144,27 @@ font-size: 20px;
 	text-align: left;
 	padding-left: 7vw;
 	padding-right: 7vw;
+	text-indent: 3.5%;
 }
 
+iframe{
+	display: block;
+	align: center;
+	margin: auto;
+	width: 75%;
+	height: 600px;
+}
+
+.noindent{
+font-family: sutro, serif;
+font-weight: 100;
+font-style: normal;
+font-size: 20px;
+	text-align: left;
+	padding-left: 7vw;
+	padding-right: 7vw;
+	text-indent: 0%;
+}
 
 /*---------- ART Page Gallery ------------*/
 
