@@ -194,7 +194,8 @@ font-size: 20px;
 
 .gallery4 img{
 	width: 15vw;		/*CALCULATED FOR 4 IMAGES ACROSS*/
-	padding: 1.5vw;		/*CALCULATED FOR EQUAL SPACING WITH 4 IMAGES*/
+	padding: 1.435vw;		/*CALCULATED FOR EQUAL SPACING WITH 4 IMAGES (Calculation = 1.5vw but need space for border)*/
+	border: 0.5px solid #ddd;
 }
 
 
