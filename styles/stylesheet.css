@@ -168,24 +168,33 @@ font-size: 20px;
 
 /*---------- ART Page Gallery ------------*/
 
-.gallery{
+/* gallery4 AND gallery5 SHARED PROPERTIES*/
+.gallery4, .gallery5{
 	padding-left: 9vw;
 	padding-right: 9vw;
 	display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
 }
-.gallery img{
+.gallery4 img, .gallery5 img{
 	vertical-align: middle;
 	transition: 1s;
-	padding: 1.2vw;		/* CALCULATED FOR 5 IMAGES*/
-	width: 12vw;		/* CALCULATED FOR 5 IMAGES*/
 }
-.gallery img:hover{
+.gallery4 img:hover, .gallery5 img:hover{
 	filter:grayscale(100%);
 	filter: opacity(60%);
 	transform: scale(1.1);
 	transform: matrix3d(1.1);
+}
+
+.gallery5 img{
+	width: 12vw;		/*CALCULATED FOR 5 IMAGES ACROSS*/
+	padding: 1.2vw;		/*CALCUALTED FOR EQUAL SPACING WITH 5 IMAGES*/
+}
+
+.gallery4 img{
+	width: 15vw;		/*CALCULATED FOR 4 IMAGES ACROSS*/
+	padding: 1.5vw;		/*CALCULATED FOR EQUAL SPACING WITH 4 IMAGES*/
 }
 
 
@@ -262,12 +271,12 @@ hr.regular-short{
   	}
 	
 	/*---- PHOTOS GALLERY & IMAGES ----*/
-	.gallery {
+	.gallery4, .gallery5 {
 		flex-wrap: flex;
 		justify-content: center;
 	}
 	
-	.gallery img {
+	.gallery4 img, .gallery5 img {
 		ertical-align: middle;
 		transition: 1s;
 		padding: 1.2vw;		/* CALCULATED FOR 2 IMAGES*/
