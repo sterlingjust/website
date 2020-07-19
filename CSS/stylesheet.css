@@ -170,8 +170,8 @@ font-size: 20px;
 
 /* gallery4 AND gallery5 SHARED PROPERTIES*/
 .gallery4, .gallery5{
-	padding-left: 9vw;
-	padding-right: 9vw;
+	padding-left: 8vw;
+	padding-right: 8vw;
 	display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
